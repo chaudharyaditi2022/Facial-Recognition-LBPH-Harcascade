@@ -197,7 +197,7 @@ def recognize_face(object_models, object_list, face, image):
             if confidence > max_confidence:
                 max_confidence = confidence
                 identity = object_list[i]
-            cv2.putText(image, "Hey {}".format(Identity), (250, 440), cv2.FONT_HERSHEY_COMPLEX, 1, (0,255,0), 2)
+            cv2.putText(image, "Hey {}".format(identity), (250, 440), cv2.FONT_HERSHEY_COMPLEX, 1, (0,255,0), 2)
             cv2.imshow('Face Recognition', image)
         else:
             cv2.putText(image, "Trying to Recognize..", (200, 440), cv2.FONT_HERSHEY_COMPLEX, 1, (0,255,255), 2)
